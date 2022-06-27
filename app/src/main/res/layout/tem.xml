@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@+id/buttonCollect"-->
+<!--    android:layout_width="150dp"-->
+<!--    android:layout_height="100dp"-->
+<!--    android:paddingLeft="8dp"-->
+<!--    android:paddingRight="8dp"-->
+<!--    android:layout_alignParentRight="true"-->
+<!--    style="@android:style/TextAppearance.DeviceDefault.Small"-->
+<!--    android:background="@color/cardview_light_background"/>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/logo1"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@mipmap/ic_launcher"-->
+<!--            android:layout_gravity="center_vertical"/>-->
+
+        <TextView
+            android:id="@+id/textv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+
+
+            android:text="#1\nDo Laundry..."
+            android:layout_marginLeft="7dp"
+            android:textSize="20sp"
+
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

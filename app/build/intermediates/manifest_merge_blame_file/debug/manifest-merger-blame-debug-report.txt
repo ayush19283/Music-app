@@ -1,0 +1,85 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ayush.mp3"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml
+10    <!-- <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/> -->
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:6:5-79
+11-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:6:22-77
+12
+13    <application
+13-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:9:5-30:19
+14        android:allowBackup="true"
+14-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:12:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.7.0] C:\Users\ayush\.gradle\caches\transforms-3\bafad2f171c3a56cd49ae3f3e16350f4\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+16        android:dataExtractionRules="@xml/data_extraction_rules"
+16-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:13:9-65
+17        android:debuggable="true"
+18        android:fullBackupContent="@xml/backup_rules"
+18-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:14:9-54
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:15:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:16:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:17:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:18:9-35
+23        android:theme="@style/Theme.Mp3" >
+23-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:19:9-41
+24        <activity
+24-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:21:9-29:20
+25            android:name="com.ayush.mp3.MainActivity"
+25-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:22:13-41
+26            android:exported="true" >
+26-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:23:13-36
+27            <intent-filter>
+27-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:24:13-28:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:25:17-69
+28-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:25:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:27:17-77
+30-->C:\Users\ayush\AndroidStudioProjects\mp3\app\src\main\AndroidManifest.xml:27:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->[com.karumi:dexter:6.2.3] C:\Users\ayush\.gradle\caches\transforms-3\d08b85e0c02e66bb8a17a918aa8e8be3\transformed\dexter-6.2.3\AndroidManifest.xml:27:9-29:72
+34            android:name="com.karumi.dexter.DexterActivity"
+34-->[com.karumi:dexter:6.2.3] C:\Users\ayush\.gradle\caches\transforms-3\d08b85e0c02e66bb8a17a918aa8e8be3\transformed\dexter-6.2.3\AndroidManifest.xml:28:13-60
+35            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+35-->[com.karumi:dexter:6.2.3] C:\Users\ayush\.gradle\caches\transforms-3\d08b85e0c02e66bb8a17a918aa8e8be3\transformed\dexter-6.2.3\AndroidManifest.xml:29:13-69
+36
+37        <provider
+37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ayush\.gradle\caches\transforms-3\682c1a59183264af9f4c8906a697ab3a\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+38            android:name="androidx.startup.InitializationProvider"
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ayush\.gradle\caches\transforms-3\682c1a59183264af9f4c8906a697ab3a\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+39            android:authorities="com.ayush.mp3.androidx-startup"
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ayush\.gradle\caches\transforms-3\682c1a59183264af9f4c8906a697ab3a\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+40            android:exported="false" >
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ayush\.gradle\caches\transforms-3\682c1a59183264af9f4c8906a697ab3a\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+41            <meta-data
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ayush\.gradle\caches\transforms-3\682c1a59183264af9f4c8906a697ab3a\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ayush\.gradle\caches\transforms-3\682c1a59183264af9f4c8906a697ab3a\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+43                android:value="androidx.startup" />
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ayush\.gradle\caches\transforms-3\682c1a59183264af9f4c8906a697ab3a\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+44            <meta-data
+44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ayush\.gradle\caches\transforms-3\daecb8117dda7417d21dff33a1076e7d\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ayush\.gradle\caches\transforms-3\daecb8117dda7417d21dff33a1076e7d\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+46                android:value="androidx.startup" />
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ayush\.gradle\caches\transforms-3\daecb8117dda7417d21dff33a1076e7d\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+47        </provider>
+48    </application>
+49
+50</manifest>
