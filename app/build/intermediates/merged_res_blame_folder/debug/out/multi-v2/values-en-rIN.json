@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ayush.mp3.app-mergeDebugResources-24:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.ayush.mp3.app-mergeDebugResources-27:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\bafad2f171c3a56cd49ae3f3e16350f4\\transformed\\core-1.7.0\\res\\values-en-rIN\\values-en-rIN.xml",

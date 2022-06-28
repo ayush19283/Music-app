@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ayush.mp3.app-mergeDebugResources-24:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.ayush.mp3.app-mergeDebugResources-27:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\3f9af9fb571aafb83f6ebf1ecdfef403\\transformed\\appcompat-1.4.2\\res\\values-large-v4\\values-large-v4.xml",

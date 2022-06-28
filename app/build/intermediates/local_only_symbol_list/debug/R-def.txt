@@ -1,22 +1,30 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color colorOfStatusBar
+color colorPrimary
+color colorPrimaryDark
 color purple_200
 color purple_500
 color purple_700
 color teal_200
 color teal_700
 color white
+drawable button
+drawable button2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_pause
 drawable ic_play
+drawable next
 drawable paus2
 drawable play
+drawable prev
 id ll
 id relativeLayout1
 id scrollView
 id seekbar
+id set
 id start
 id textv
 layout activity_main
@@ -24,6 +32,7 @@ layout tem
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+style DemoTheme
 style Theme.Mp3
 xml backup_rules
 xml data_extraction_rules

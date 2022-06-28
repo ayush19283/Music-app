@@ -1,5 +1,8 @@
 package com.ayush.mp3;
+import static android.app.Notification.EXTRA_NOTIFICATION_ID;
+
 import android.Manifest;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -7,10 +10,12 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.provider.SyncStateContract;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
@@ -20,6 +25,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -28,13 +34,18 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import com.google.android.gms.common.internal.Constants;
+import com.google.android.gms.games.Player;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -61,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> artist = new ArrayList<String>();
     ArrayList<String> path = new ArrayList<String>();
     MediaPlayer player;
-
+    TextView chile_txt_view;
+    int prev=-1;
     int p=0;
 
     View.OnClickListener btnClickListener;
@@ -69,13 +81,21 @@ public class MainActivity extends AppCompatActivity {
     SeekBar seek;
     private Handler mHandler = new Handler();
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Window window = this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(this.getResources().getColor(R.color.colorPrimaryDark));
+        window.setNavigationBarColor(this.getResources().getColor(R.color.black));
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide(); //hide the title bar
         setContentView(R.layout.activity_main);
         seek=findViewById(R.id.seekbar);
+
+
 
 
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);//will hide the title
@@ -125,11 +145,11 @@ public class MainActivity extends AppCompatActivity {
 //                child_ll.setId((Integer) i);
 //                child_ll.setPadding(20, 45, 20, 10);
 //                TextView chile_txt_view = child_ll.findViewById(R.id.textv);
-                TextView chile_txt_view = new TextView(this);
+               chile_txt_view = new TextView(this);
                 chile_txt_view.setId(i);
                 chile_txt_view.setOnClickListener(btnClickListener);
-                String art="\n"+artist.get(i);
-                String tsk_title = list.get(i);
+                String art="\n    "+artist.get(i);
+                String tsk_title = "  "+list.get(i);
                 if (tsk_title.length() > 30){
                     tsk_title = tsk_title.substring(0, 20)+"...";
                 }
@@ -147,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
 //                    normalText = "\n" + task.get(1).toString();
 //                }
                 SpannableString str = new SpannableString(boldText);
-                str.setSpan(new ForegroundColorSpan(Color.BLACK), 0, str.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                str.setSpan(new ForegroundColorSpan(Color.WHITE), 0, str.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                 str.setSpan(new RelativeSizeSpan(1.4f), 0,str.length(), 0);//                str.setSpan(new StyleSpan(Typeface.NORMAL), 0, boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 //                str.setSpan(new StyleSpan(Typeface.NORMAL), 0, art.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                 chile_txt_view.setText(str);
@@ -184,9 +204,67 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
-                seek=findViewById(R.id.seekbar);
+                if(prev<0) {
+                }
+                else{
 
-               findViewById(R.id.start).setBackgroundResource(R.drawable.ic_pause);
+                    TextView t1 =findViewById(prev);
+                    String tsk_title = "  "+list.get(prev);
+                    if (tsk_title.length() > 30){
+                        tsk_title = tsk_title.substring(0, 20)+"...";
+                    }
+                    String boldText = tsk_title;
+
+                    SpannableString str = new SpannableString(boldText);
+                    str.setSpan(new ForegroundColorSpan(Color.WHITE), 0, str.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    str.setSpan(new RelativeSizeSpan(1.4f), 0,str.length(), 0);//                str.setSpan(new StyleSpan(Typeface.NORMAL), 0, boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//                str.setSpan(new StyleSpan(Typeface.NORMAL), 0, art.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    t1.setText(str);
+
+                    String art="\n    "+artist.get(prev);
+                    if (art.length() > 30){
+                        art = art.substring(0, 20)+"...";
+                    }
+
+                    Spannable wordTwo = new SpannableString(art);
+                    wordTwo.setSpan(new ForegroundColorSpan(Color.RED), 0, wordTwo.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    wordTwo.setSpan(new RelativeSizeSpan(0.8f), 0,wordTwo.length(), 0);//                str.setSpan(new StyleSpan(Typeface.NORMAL), 0, boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+                    t1.append(wordTwo);
+
+                }
+                prev=v.getId();
+                TextView t1 =findViewById(v.getId());
+                String tsk_title = "  "+list.get(v.getId());
+                if (tsk_title.length() > 30){
+                    tsk_title = tsk_title.substring(0, 20)+"...";
+                }
+                String boldText = tsk_title;
+
+                SpannableString str = new SpannableString(boldText);
+                str.setSpan(new ForegroundColorSpan(Color.rgb(135,206,235)), 0, str.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                str.setSpan(new RelativeSizeSpan(1.4f), 0,str.length(), 0);//                str.setSpan(new StyleSpan(Typeface.NORMAL), 0, boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//                str.setSpan(new StyleSpan(Typeface.NORMAL), 0, art.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                t1.setText(str);
+
+                String art="\n    "+artist.get(v.getId());
+                if (art.length() > 30){
+                    art = art.substring(0, 20)+"...";
+                }
+
+                Spannable wordTwo = new SpannableString(art);
+                wordTwo.setSpan(new ForegroundColorSpan(Color.rgb(135,206,235)), 0, wordTwo.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                wordTwo.setSpan(new RelativeSizeSpan(0.8f), 0,wordTwo.length(), 0);//                str.setSpan(new StyleSpan(Typeface.NORMAL), 0, boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+                t1.append(wordTwo);
+
+                seek=findViewById(R.id.seekbar);
+                TextView tt =findViewById(R.id.set);
+                tt.setTypeface(null,Typeface.BOLD);
+                tt.setText(list.get(v.getId()));
+                tt.setSelected(true);
+
+               findViewById(R.id.start).setBackgroundResource(R.drawable.button);
                 p=1;
                 System.out.println("fdfffffffffffffffffffffffffffffffff"+v.getId());
 
@@ -221,11 +299,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(p==1){
                player.pause();
-                    findViewById(R.id.start).setBackgroundResource(R.drawable.ic_play);
+                    findViewById(R.id.start).setBackgroundResource(R.drawable.button2);
                 p=0;}
                 else{
                     player.start();
-                    findViewById(R.id.start).setBackgroundResource(R.drawable.ic_pause);
+                    findViewById(R.id.start).setBackgroundResource(R.drawable.button);
                     p=1;
                 }
 
@@ -265,6 +343,8 @@ public class MainActivity extends AppCompatActivity {
 //
 //            layout.addView(tv1);
         }
+
+
     private void runtimePermission(){
 
         Dexter.withContext(this)
@@ -315,7 +395,7 @@ public class MainActivity extends AppCompatActivity {
                 String d= musicCursor.getString(data);
                 String thisTitle = musicCursor.getString(titleColumn);
                 String thisArtist = musicCursor.getString(artistColumn);
-                System.out.println(d);
+             //   System.out.println(d);
                 list.add(thisTitle);
                 artist.add(thisArtist);
                 path.add(d);

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ayush.mp3.app-mergeDebugResources-24:/values-v28/values-v28.xml",
+            "outputFile": "com.ayush.mp3.app-mergeDebugResources-27:/values-v28/values-v28.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\4c9908e874094801c365bd77c205b1c8\\transformed\\material-1.6.1\\res\\values-v28\\values-v28.xml",

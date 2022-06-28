@@ -12,13 +12,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#202020"
         android:orientation="vertical">
 
 
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
-            android:layout_height="600dp"
+            android:layout_height="550dp"
+
             >
 
             <LinearLayout
@@ -56,22 +58,55 @@
 <!--                android:background="@drawable/play"-->
 
 <!--               />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/set"
+                android:textColor="#ffffff"
+                android:textSize="26dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                />
             <SeekBar
                 android:id="@+id/seekbar"
+                android:progressBackgroundTint="@color/white"
+                android:progressTint="#0055b3"
+                android:thumbTint="#0055b3"
+
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="27dp"
                 android:max="150"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+             <androidx.appcompat.widget.AppCompatButton
+                 android:layout_width="90dp"
+                 android:layout_marginLeft="36dp"
+                 android:layout_height="59dp"
+                 android:background="@drawable/prev"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/start"
-                android:layout_width="95dp"
-                android:layout_height="79dp"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/ic_play"
+                android:layout_marginLeft="10dp"
+                android:layout_width="85dp"
+                android:layout_height="68dp"
 
+                android:background="@drawable/button2"/>
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:layout_width="90dp"
+                  android:layout_height="59dp"
+                  android:layout_marginRight="30dp"
+                  android:background="@drawable/next"/>
+
+            </LinearLayout>
 
                                />
 

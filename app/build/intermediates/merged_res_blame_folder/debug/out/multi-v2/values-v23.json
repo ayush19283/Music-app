@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ayush.mp3.app-mergeDebugResources-24:/values-v23/values-v23.xml",
+            "outputFile": "com.ayush.mp3.app-mergeDebugResources-27:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\b292ef1bf911f5d1905a58cf7db83d7e\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
