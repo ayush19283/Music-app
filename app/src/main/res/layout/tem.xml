@@ -1,48 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    android:id="@+id/buttonCollect"-->
-<!--    android:layout_width="150dp"-->
-<!--    android:layout_height="100dp"-->
-<!--    android:paddingLeft="8dp"-->
-<!--    android:paddingRight="8dp"-->
-<!--    android:layout_alignParentRight="true"-->
-<!--    style="@android:style/TextAppearance.DeviceDefault.Small"-->
-<!--    android:background="@color/cardview_light_background"/>-->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/relativeLayout1"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:foreground="?android:attr/selectableItemBackground">
+        android:layout_height="200dp"
+        tools:ignore="MissingConstraints"
 
-<!--        <ImageView-->
-<!--            android:id="@+id/logo1"-->
-<!--            android:layout_width="50dp"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:src="@mipmap/ic_launcher"-->
-<!--            android:layout_gravity="center_vertical"/>-->
-
-        <TextView
-            android:id="@+id/textv"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center_vertical"
-            android:layout_gravity="center_vertical"
+        >
 
 
-            android:text="#1\nDo Laundry..."
-            android:layout_marginLeft="7dp"
-            android:textSize="20sp"
 
-            android:textColor="@color/black"
+        <RelativeLayout
+            android:id="@+id/dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+           >
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+
+        android:background="@color/black"> </TextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pencil color"
+            android:textSize="30dp"
+            android:textColor="#ffffff"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round"
+        android:id="@+id/lm"
+
+       >
+    </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/lm"
+            android:background="@drawable/round"
+            android:backgroundTint="#00254d"
+
+
             />
-    </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round"
+            android:backgroundTint="#173518"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/mm"
+
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="105dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pencil thickness"
+            android:textSize="30dp"
+            android:textColor="#ffffff"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="157dp"
+               />
+        </RelativeLayout>
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

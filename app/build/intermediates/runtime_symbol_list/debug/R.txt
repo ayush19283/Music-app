@@ -2502,6 +2502,7 @@ int drawable design_ic_visibility 0x7f070074
 int drawable design_ic_visibility_off 0x7f070075
 int drawable design_password_eye 0x7f070076
 int drawable design_snackbar_background 0x7f070077
+int drawable eraser 0x7f0700ba
 int drawable googleg_disabled_color_18 0x7f070078
 int drawable googleg_standard_color_18 0x7f070079
 int drawable ic_clock_black_24dp 0x7f07007a
@@ -2560,8 +2561,10 @@ int drawable notification_template_icon_low_bg 0x7f0700ad
 int drawable notification_tile_bg 0x7f0700ae
 int drawable notify_panel_notification_icon_bg 0x7f0700af
 int drawable paus2 0x7f0700b0
+int drawable pencil 0x7f0700bb
 int drawable play 0x7f0700b1
 int drawable prev 0x7f0700b9
+int drawable round 0x7f0700bc
 int drawable test_custom_background 0x7f0700b2
 int drawable test_level_drawable 0x7f0700b3
 int drawable tooltip_frame_dark 0x7f0700b4
@@ -2713,6 +2716,7 @@ int id customPanel 0x7f08008f
 int id cut 0x7f080090
 int id dark 0x7f080091
 int id date_picker_actions 0x7f080092
+int id dd 0x7f0801f8
 int id decelerate 0x7f080093
 int id decelerateAndComplete 0x7f080094
 int id decor_content_parent 0x7f080095
@@ -2823,6 +2827,7 @@ int id linear 0x7f0800fd
 int id listMode 0x7f0800fe
 int id list_item 0x7f0800ff
 int id ll 0x7f080100
+int id lm 0x7f0801f9
 int id masked 0x7f080101
 int id match_constraint 0x7f080102
 int id match_parent 0x7f080103
@@ -2850,6 +2855,7 @@ int id media_actions 0x7f080118
 int id message 0x7f080119
 int id middle 0x7f08011a
 int id mini 0x7f08011b
+int id mm 0x7f0801fa
 int id month_grid 0x7f08011c
 int id month_navigation_bar 0x7f08011d
 int id month_navigation_fragment_toggle 0x7f08011e
@@ -2924,7 +2930,6 @@ int id progress_horizontal 0x7f080162
 int id radio 0x7f080163
 int id ratio 0x7f080164
 int id rectangles 0x7f080165
-int id relativeLayout1 0x7f080166
 int id reverseSawtooth 0x7f080167
 int id right 0x7f080168
 int id rightToLeft 0x7f080169
@@ -2952,6 +2957,7 @@ int id search_mag_icon 0x7f08017e
 int id search_plate 0x7f08017f
 int id search_src_text 0x7f080180
 int id search_voice_btn 0x7f080181
+int id seekBar 0x7f0801fb
 int id seekbar 0x7f080182
 int id select_dialog_listview 0x7f080183
 int id selected 0x7f080184
@@ -3030,7 +3036,6 @@ int id textinput_helper_text 0x7f0801cb
 int id textinput_placeholder 0x7f0801cc
 int id textinput_prefix_text 0x7f0801cd
 int id textinput_suffix_text 0x7f0801ce
-int id textv 0x7f0801cf
 int id time 0x7f0801d0
 int id title 0x7f0801d1
 int id titleDividerNoCustom 0x7f0801d2
@@ -3228,6 +3233,7 @@ int layout mtrl_picker_header_title_text 0x7f0b0059
 int layout mtrl_picker_header_toggle 0x7f0b005a
 int layout mtrl_picker_text_input_date 0x7f0b005b
 int layout mtrl_picker_text_input_date_range 0x7f0b005c
+int layout notification 0x7f0b0081
 int layout notification_action 0x7f0b005d
 int layout notification_action_tombstone 0x7f0b005e
 int layout notification_media_action 0x7f0b005f

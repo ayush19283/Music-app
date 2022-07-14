@@ -2,6 +2,8 @@ package com.ayush.mp3;
 import static android.app.Notification.EXTRA_NOTIFICATION_ID;
 
 import android.Manifest;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -29,6 +31,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.RemoteViews;
 import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -94,6 +97,22 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide(); //hide the title bar
         setContentView(R.layout.activity_main);
         seek=findViewById(R.id.seekbar);
+        NotificationManager a= (NotificationManager) getSystemService(NOTIFICATION_SERVICE);;
+
+        RemoteViews contentView = new RemoteViews(getPackageName(), R.layout.notification);
+        contentView.setImageViewResource(R.id.image, R.mipmap.ic_launcher);
+        contentView.setTextViewText(R.id.title, "Custom notification");
+//        contentView.setTextViewText(R.id.text, "This is a custom layout");
+
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.ic_launcher_background)
+                .setContent(contentView);
+
+        Notification notification = mBuilder.build();
+        notification.flags |= Notification.FLAG_AUTO_CANCEL;
+        notification.defaults |= Notification.DEFAULT_SOUND;
+        notification.defaults |= Notification.DEFAULT_VIBRATE;
+        a.notify(1, notification);
 
 
 

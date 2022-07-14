@@ -2503,6 +2503,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable eraser
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
@@ -2561,8 +2562,10 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable paus2
+drawable pencil
 drawable play
 drawable prev
+drawable round
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2714,6 +2717,7 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
+id dd
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2824,6 +2828,7 @@ id linear
 id listMode
 id list_item
 id ll
+id lm
 id masked
 id match_constraint
 id match_parent
@@ -2851,6 +2856,7 @@ id media_actions
 id message
 id middle
 id mini
+id mm
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2925,7 +2931,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id relativeLayout1
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2953,6 +2958,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seekBar
 id seekbar
 id select_dialog_listview
 id selected
@@ -3031,7 +3037,6 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id textv
 id time
 id title
 id titleDividerNoCustom
@@ -3229,6 +3234,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout notification
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
