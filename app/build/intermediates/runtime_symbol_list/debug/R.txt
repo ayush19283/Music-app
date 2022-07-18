@@ -2506,6 +2506,7 @@ int drawable eraser 0x7f0700ba
 int drawable googleg_disabled_color_18 0x7f070078
 int drawable googleg_standard_color_18 0x7f070079
 int drawable ic_clock_black_24dp 0x7f07007a
+int drawable ic_close 0x7f0700bd
 int drawable ic_keyboard_black_24dp 0x7f07007b
 int drawable ic_launcher_background 0x7f07007c
 int drawable ic_launcher_foreground 0x7f07007d
@@ -2516,8 +2517,12 @@ int drawable ic_mtrl_checked_circle 0x7f070081
 int drawable ic_mtrl_chip_checked_black 0x7f070082
 int drawable ic_mtrl_chip_checked_circle 0x7f070083
 int drawable ic_mtrl_chip_close_circle 0x7f070084
+int drawable ic_next 0x7f0700be
 int drawable ic_pause 0x7f070085
+int drawable ic_pause_notif 0x7f0700bf
 int drawable ic_play 0x7f070086
+int drawable ic_play_notif 0x7f0700c0
+int drawable ic_previous 0x7f0700c1
 int drawable m3_appbar_background 0x7f070087
 int drawable m3_popupmenu_background_overlay 0x7f070088
 int drawable m3_radiobutton_ripple 0x7f070089
@@ -2653,6 +2658,7 @@ int id animateToStart 0x7f080050
 int id antiClockwise 0x7f080051
 int id anticipate 0x7f080052
 int id arc 0x7f080053
+int id artistAlbum 0x7f0801fd
 int id asConfigured 0x7f080054
 int id async 0x7f080055
 int id auto 0x7f080056
@@ -2697,6 +2703,7 @@ int id clear_text 0x7f08007c
 int id clip_horizontal 0x7f08007d
 int id clip_vertical 0x7f08007e
 int id clockwise 0x7f08007f
+int id close 0x7f0801fe
 int id closest 0x7f080080
 int id collapseActionView 0x7f080081
 int id compress 0x7f080082
@@ -2817,6 +2824,7 @@ int id jumpToEnd 0x7f0800f3
 int id jumpToStart 0x7f0800f4
 int id labeled 0x7f0800f5
 int id layout 0x7f0800f6
+int id layout_parent 0x7f0801ff
 int id left 0x7f0800f7
 int id leftToRight 0x7f0800f8
 int id legacy 0x7f0800f9
@@ -2902,6 +2910,10 @@ int id noState 0x7f080146
 int id none 0x7f080147
 int id normal 0x7f080148
 int id north 0x7f080149
+int id notif_header 0x7f080200
+int id notif_next 0x7f080201
+int id notif_play_pause 0x7f080202
+int id notif_prev 0x7f080203
 int id notification_background 0x7f08014a
 int id notification_main_column 0x7f08014b
 int id notification_main_column_container 0x7f08014c
@@ -2977,6 +2989,7 @@ int id snackbar_action 0x7f080190
 int id snackbar_text 0x7f080191
 int id snap 0x7f080192
 int id snapMargins 0x7f080193
+int id song 0x7f080204
 int id south 0x7f080194
 int id spacer 0x7f080195
 int id special_effects_controller_view_tag 0x7f080196
@@ -3304,6 +3317,7 @@ int string abc_shareactionprovider_share_with_application 0x7f0f0019
 int string abc_toolbar_collapse_description 0x7f0f001a
 int string androidx_startup 0x7f0f001b
 int string app_name 0x7f0f001c
+int string app_title 0x7f0f008d
 int string appbar_scrolling_view_behavior 0x7f0f001d
 int string bottom_sheet_behavior 0x7f0f001e
 int string bottomsheet_action_expand_halfway 0x7f0f001f

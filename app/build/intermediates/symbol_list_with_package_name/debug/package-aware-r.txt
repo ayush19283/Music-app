@@ -2507,6 +2507,7 @@ drawable eraser
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
+drawable ic_close
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2517,8 +2518,12 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_next
 drawable ic_pause
+drawable ic_pause_notif
 drawable ic_play
+drawable ic_play_notif
+drawable ic_previous
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2654,6 +2659,7 @@ id animateToStart
 id antiClockwise
 id anticipate
 id arc
+id artistAlbum
 id asConfigured
 id async
 id auto
@@ -2698,6 +2704,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id close
 id closest
 id collapseActionView
 id compress
@@ -2818,6 +2825,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_parent
 id left
 id leftToRight
 id legacy
@@ -2903,6 +2911,10 @@ id noState
 id none
 id normal
 id north
+id notif_header
+id notif_next
+id notif_play_pause
+id notif_prev
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -2978,6 +2990,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id song
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3305,6 +3318,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
+string app_title
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway

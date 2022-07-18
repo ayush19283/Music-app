@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.ayush.mp3.app-merged_res-29:/drawable_ic_play_notif.xml.flat",
+        "source": "com.ayush.mp3.app-main-31:/drawable/ic_play_notif.xml"
+    },
+    {
         "merged": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-merged_res-29:\\drawable_button.xml.flat",
         "source": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-main-31:\\drawable\\button.xml"
     },
@@ -20,8 +24,12 @@
         "source": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.ayush.mp3.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "com.ayush.mp3.app-main-31:/layout/activity_main.xml"
+        "merged": "com.ayush.mp3.app-merged_res-29:/drawable_ic_close.xml.flat",
+        "source": "com.ayush.mp3.app-main-31:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.ayush.mp3.app-merged_res-29:/drawable_ic_next.xml.flat",
+        "source": "com.ayush.mp3.app-main-31:/drawable/ic_next.xml"
     },
     {
         "merged": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -36,12 +44,20 @@
         "source": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-main-31:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "com.ayush.mp3.app-merged_res-29:/drawable_ic_previous.xml.flat",
+        "source": "com.ayush.mp3.app-main-31:/drawable/ic_previous.xml"
+    },
+    {
         "merged": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-merged_res-29:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-main-31:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.ayush.mp3.app-merged_res-29:/drawable_ic_pause_notif.xml.flat",
+        "source": "com.ayush.mp3.app-main-31:/drawable/ic_pause_notif.xml"
     },
     {
         "merged": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -74,6 +90,10 @@
     {
         "merged": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-merged_res-29:\\drawable-v24_play.png.flat",
         "source": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-main-31:\\drawable-v24\\play.png"
+    },
+    {
+        "merged": "com.ayush.mp3.app-merged_res-29:/layout_notification.xml.flat",
+        "source": "com.ayush.mp3.app-main-31:/layout/notification.xml"
     },
     {
         "merged": "C:\\Users\\ayush\\.gradle\\daemon\\7.3.3\\com.ayush.mp3.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
