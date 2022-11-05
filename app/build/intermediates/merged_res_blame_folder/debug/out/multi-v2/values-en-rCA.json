@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.ayush.mp3.app-mergeDebugResources-27:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "com.ayush.mymusic.app-mergeDebugResources-27:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\3f9af9fb571aafb83f6ebf1ecdfef403\\transformed\\appcompat-1.4.2\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\29eba5688fecd4ac9e39dddfa67228af\\transformed\\appcompat-1.5.1\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\bafad2f171c3a56cd49ae3f3e16350f4\\transformed\\core-1.7.0\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\6c2426b203d9fc219538c153928a9395\\transformed\\core-1.8.0\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

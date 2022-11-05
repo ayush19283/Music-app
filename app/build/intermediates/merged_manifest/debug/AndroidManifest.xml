@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ayush.mp3"
+    package="com.ayush.mymusic"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="21"
         android:targetSdkVersion="32" />
-    <!-- <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/> -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -22,9 +22,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Mp3" >
+        android:theme="@style/Theme.MyMusic" >
         <activity
-            android:name="com.ayush.mp3.MainActivity"
+            android:name="com.ayush.mymusic.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,60 +33,9 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name="com.ayush.mp3.MediaSessionService"
-            android:enabled="true"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MEDIA_BUTTON" />
-            </intent-filter>
-        </service>
-        <service
-            android:name="com.ayush.mp3.MusicService"
-            android:exported="false"
-            android:stopWithTask="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MEDIA_BUTTON" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.ankit.music.action.TOGGLE_PLAYBACK" />
-                <action android:name="com.ankit.music.action.PLAY" />
-                <action android:name="com.ankit.music.action.PAUSE" />
-                <action android:name="com.ankit.music.action.BACK" />
-                <action android:name="com.ankit.music.action.FORWARD" />
-            </intent-filter>
-        </service>
-
-        <receiver
-            android:name="com.ayush.mp3.AudioPlayerBroadcastReceiver"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="com.example.app.ACTION_PLAY" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name="androidx.media.session.MediaButtonReceiver"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MEDIA_BUTTON" />
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name="com.karumi.dexter.DexterActivity"
-            android:theme="@style/Dexter.Internal.Theme.Transparent" />
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.ayush.mp3.androidx-startup"
+            android:authorities="com.ayush.mymusic.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

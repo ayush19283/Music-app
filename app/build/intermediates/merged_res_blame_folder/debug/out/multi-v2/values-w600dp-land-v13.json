@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.ayush.mp3.app-mergeDebugResources-27:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.ayush.mymusic.app-mergeDebugResources-27:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\4c9908e874094801c365bd77c205b1c8\\transformed\\material-1.6.1\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\f7cbaec3c90228ff515798a303ff195b\\transformed\\material-1.7.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

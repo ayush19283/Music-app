@@ -3,24 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/button.xml" value="0.156" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/button2.xml" value="0.156" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/eraser.xml" value="0.10400000000000001" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/ic_close.xml" value="0.167" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/ic_next.xml" value="0.167" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/ic_pause.xml" value="0.1415" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/ic_pause_notif.xml" value="0.167" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/ic_play.xml" value="0.1415" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/ic_play_notif.xml" value="0.167" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/ic_prev.xml" value="0.167" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/next.xml" value="0.156" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/pencil.xml" value="0.156" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/prev.xml" value="0.156" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/drawable/round.xml" value="0.156" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/layout/activity_main.xml" value="0.16576086956521738" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/layout/notification.xml" value="0.22083333333333333" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/layout/tem.xml" value="0.16576086956521738" />
-        <entry key="..\:/Users/ayush/AndroidStudioProjects/mp3/app/src/main/res/xml/network_security_config.xml" value="0.16576086956521738" />
+        <entry key="..\:/Users/ayush/AndroidStudioProjects/MyMusic/app/src/main/res/layout/activity_main.xml" value="0.16979166666666667" />
       </map>
     </option>
   </component>

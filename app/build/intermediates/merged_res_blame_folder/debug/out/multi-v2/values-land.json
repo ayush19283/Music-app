@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.ayush.mp3.app-mergeDebugResources-27:/values-land/values-land.xml",
+            "outputFile": "com.ayush.mymusic.app-mergeDebugResources-27:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\3f9af9fb571aafb83f6ebf1ecdfef403\\transformed\\appcompat-1.4.2\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\29eba5688fecd4ac9e39dddfa67228af\\transformed\\appcompat-1.5.1\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\4c9908e874094801c365bd77c205b1c8\\transformed\\material-1.6.1\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\ayush\\.gradle\\caches\\transforms-3\\f7cbaec3c90228ff515798a303ff195b\\transformed\\material-1.7.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,32,37",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
