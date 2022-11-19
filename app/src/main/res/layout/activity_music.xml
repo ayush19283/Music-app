@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="570dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+         <SeekBar
+             android:id="@+id/seekbar"
+             android:progressBackgroundTint="@color/white"
+             android:progressTint="#0055b3"
+             android:splitTrack="false"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:max="150"/>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingTop="10dp"
+             android:paddingLeft="20dp"
+             android:paddingBottom="10dp"
+             >
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/game"
+                />
+
+             <TextView
+                 android:id="@+id/song_name"
+                 android:layout_width="210dp"
+                 android:layout_height="wrap_content"
+                 android:text="Love the way you like"
+                 android:paddingLeft="10dp"
+                 android:layout_toRightOf="@+id/photo"
+                 android:textColor="@color/white"
+                 android:textSize="30dp"
+                 android:ellipsize="marquee"
+                 android:marqueeRepeatLimit="marquee_forever"
+                 android:scrollHorizontally="true"
+                 android:singleLine="true"
+                 />
+
+             <androidx.appcompat.widget.AppCompatButton
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_toRightOf="@+id/song_name"
+                 android:background="@drawable/ic_pause_button_svgrepo_com" />
+
+         </RelativeLayout>
+     </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

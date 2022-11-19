@@ -12,6 +12,7 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
@@ -62,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
                 MediaStore.Audio.Media.DURATION
         };
         final String sortOrder = MediaStore.Audio.AudioColumns.TITLE + " COLLATE LOCALIZED ASC";
-        List<String> mp3Files = new ArrayList<>();
+        List<String> mp3Files = new ArrayList<String>();
+        List<String> Title = new ArrayList<String>();
 
         Cursor cursor = null;
         try {
@@ -78,16 +80,21 @@ public class MainActivity extends AppCompatActivity {
                     String displayName  = cursor.getString(3);
                     String songDuration = cursor.getString(4);
                     cursor.moveToNext();
+                    System.out.println(title+"    "+artist+"     "+displayName);
                     if(path != null && path.endsWith(".mp3")) {
                         mp3Files.add(path);
+                        Title.add(title);
                     }
                 }
-
             }
-            
+
             for( String file : mp3Files) {
                 Log.i("TAG error0", file);
             }
+            Intent intent = new Intent(MainActivity.this,MusicActivity.class);
+            intent.putStringArrayListExtra("path", (ArrayList<String>) mp3Files);
+            intent.putStringArrayListExtra("title", (ArrayList<String>) Title);
+            startActivity(intent);
 
         } catch (Exception e) {
             Log.e("TAG error", e.toString());

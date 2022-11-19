@@ -24,6 +24,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyMusic" >
         <activity
+            android:name="com.ayush.mymusic.MusicActivity"
+            android:exported="false" />
+        <activity
             android:name="com.ayush.mymusic.MainActivity"
             android:exported="true" >
             <intent-filter>

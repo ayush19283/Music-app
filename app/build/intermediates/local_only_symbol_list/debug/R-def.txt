@@ -7,9 +7,17 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable game
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_pause_button_svgrepo_com
+id ll
+id photo
+id scrollView
+id seekbar
+id song_name
 layout activity_main
+layout activity_music
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

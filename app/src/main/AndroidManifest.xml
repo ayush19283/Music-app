@@ -17,6 +17,9 @@
         android:theme="@style/Theme.MyMusic"
         tools:targetApi="31">
         <activity
+            android:name=".MusicActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

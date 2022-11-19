@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ayush/AndroidStudioProjects/MyMusic/app/src/main/res/drawable/ic_pause_button_svgrepo_com.xml" value="0.13" />
         <entry key="..\:/Users/ayush/AndroidStudioProjects/MyMusic/app/src/main/res/layout/activity_main.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/ayush/AndroidStudioProjects/MyMusic/app/src/main/res/layout/activity_music.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/ayush/AndroidStudioProjects/MyMusic/app/src/main/res/layout/temporary.xml" value="0.18958333333333333" />
       </map>
     </option>
   </component>

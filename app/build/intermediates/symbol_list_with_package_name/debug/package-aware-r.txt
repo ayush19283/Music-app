@@ -2557,6 +2557,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable game
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2568,6 +2569,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_pause_button_svgrepo_com
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2877,6 +2879,7 @@ id line3
 id linear
 id listMode
 id list_item
+id ll
 id marquee
 id masked
 id match_constraint
@@ -2969,6 +2972,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id photo
 id pin
 id position
 id postLayout
@@ -3005,6 +3009,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seekbar
 id select_dialog_listview
 id selected
 id selection_type
@@ -3022,6 +3027,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id song_name
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3238,6 +3244,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_music
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
